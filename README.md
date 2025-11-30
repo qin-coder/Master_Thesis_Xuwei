@@ -105,8 +105,11 @@ java -jar evosuite-master-1.2.1.jar
 ## 📂 Project Structure
 
 ├── evosuite_RL_version/ # Source code of the modified EvoSuite
+
 ├── Experiment scripts/ # Python/Bash scripts for running batch experiments
+
 ├── Experiment results/ # Raw CSV data from the evaluation (SF110)
+
 └── Master_Thesis.pdf # Full thesis text
 
 
