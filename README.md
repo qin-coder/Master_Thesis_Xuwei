@@ -108,9 +108,8 @@ java -jar evosuite-master-1.2.1.jar
 
 ├── Experiment scripts/ # Python/Bash scripts for running batch experiments
 
-├── Experiment results/ # Raw CSV data from the evaluation (SF110)
+└── Experiment results/ # Raw CSV data from the evaluation (SF110)
 
-└── Master_Thesis.pdf # Full thesis text
 
 
 
