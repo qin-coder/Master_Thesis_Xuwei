@@ -39,10 +39,15 @@ The RL controller interacts with EvoSuite's evolutionary cycle every 10 iteratio
 
 graph TD
 A[EvoSuite Search Loop] -->|State: Fitness & Rates| B(RL Agent)
+
 B -->|Action: Adjust Param| C{Q-Learning Policy}
+
 C -->|Update| D[New Crossover/Mutation Rates]
+
 D -->|Apply| A
+
 A -->|Feedback| E[Reward Calculation]
+
 E -->|Update Q-Table| B
 
 
@@ -73,7 +78,9 @@ For classes with improved coverage (e.g., `ghm.follow.gui.TabbedPane`), RL-DynaM
 
 ### Build from Source
 git clone https://github.com/qin-coder/Master_Thesis_Xuwei.git
+
 cd Master_Thesis_Xuwei
+
 mvn clean install
 
 
@@ -81,10 +88,15 @@ mvn clean install
 You can run the tool just like standard EvoSuite, but enabled with the RL controller:
 
 java -jar evosuite-master-1.2.1.jar
+
 -class <TargetClass>
+
 -projectCP <Classpath>
+
 -criterion branch:line:weakmutation
+
 -Dalgorithm=DynaMOSA
+
 -Dsearch_budget=300
 
 
